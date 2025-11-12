@@ -1,0 +1,51 @@
+.parent {
+  display: grid;
+  grid-template-areas:
+    "a b e e"
+    "c d e e"
+    "f f g g";
+  gap: 16px;
+}
+
+
+
+article.card {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card div.img-card {
+    flex: 1;
+    border-radius: 8px 8px 0px 0px;
+    background-color: gray;
+}
+
+#article-a {
+    grid-area: a;
+}
+
+#article-b {
+    grid-area: b;
+}
+
+#article-c {
+    grid-area: c;
+}
+
+#article-d {
+    grid-area: d;
+}
+
+#article-e {
+    grid-area: e;
+}
+
+#article-f {
+    grid-area: f;
+}
+
+#article-g {
+    grid-area: g;
+}
