@@ -1,9 +1,26 @@
+section.suggestion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .parent {
   display: grid;
   grid-template-areas:
     "a b e e"
     "c d e e";
-  gap: 16px;
+  gap: 8px;
+}
+
+section.enregistrement {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+section.enregistrement article{
+    flex: 1;
 }
 
 p {
