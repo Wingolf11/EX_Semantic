@@ -2,50 +2,53 @@
   display: grid;
   grid-template-areas:
     "a b e e"
-    "c d e e"
-    "f f g g";
+    "c d e e";
   gap: 16px;
 }
 
-
+p {
+  margin: 0%;
+}
 
 article.card {
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .card div.img-card {
-    flex: 1;
-    border-radius: 8px 8px 0px 0px;
-    background-color: gray;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px 8px 0px 0px;
+  padding: 6px;
+  background-color: gray;
+}
+
+div.like-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }
 
 #article-a {
-    grid-area: a;
+  grid-area: a;
 }
 
 #article-b {
-    grid-area: b;
+  grid-area: b;
 }
 
 #article-c {
-    grid-area: c;
+  grid-area: c;
 }
 
 #article-d {
-    grid-area: d;
+  grid-area: d;
 }
 
 #article-e {
-    grid-area: e;
-}
-
-#article-f {
-    grid-area: f;
-}
-
-#article-g {
-    grid-area: g;
+  grid-area: e;
 }
