@@ -1,8 +1,61 @@
-div.main-content {
+:root {
+  --main-background-color: gray;
+  --secondary-background-color: white;
+  --terciary-background-color: rgb(255, 102, 0);
+  --border-color: rgb(59, 58, 58);
+  --text-primaire: black;
+  --text-secondaire: rgb(75, 73, 73);
+  --text-orange: rgb(255, 102, 0);
+  /*   --card-background-image: ;
+ */
+  font-family: "Elms sans", sans-serif;
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding: 0px 174px 60px 174px;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px var(--border-color);
+}
+
+div.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--main-background-color);
+  padding: 0px 150px 60px 150px;
+}
+
+div.title-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  margin: 0%;
+  font-size: 18px;
+}
+
+button.enregistrer-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  padding: 4px 8px;
+  border: unset;
+  border-radius: 5px;
+  font-size: 10px;
+  color: var(--secondary-background-color);
+  background-color: var(--terciary-background-color);
+  height: fit-content;
 }
 
 section.suggestion {
@@ -36,8 +89,36 @@ section.autres {
   gap: 8px;
 }
 
+section.autres div.content {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.material-symbols-outlined {
+  font-size: 17px;
+}
+
+.orange-color {
+  color: var(--text-orange);
+}
+
 p {
   margin: 0%;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+div.genre-container {
+  background-color: var(--secondary-background-color);
+  padding: 1px 10px 1px 5px;
+  width: fit-content;
+  border-radius: 16px;
+}
+p.genre {
+  width: fit-content;
+  font-size: 8px;
+  color: var(--text-secondaire);
 }
 
 article.card {
@@ -54,7 +135,7 @@ article.card {
   justify-content: space-between;
   border-radius: 8px 8px 0px 0px;
   padding: 6px;
-  background-color: gray;
+  background-color: rgb(141, 61, 61);
 }
 
 div.like-icon {
