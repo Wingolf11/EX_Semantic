@@ -19,9 +19,26 @@ div.wrapper {
 aside {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
+    justify-content: start;
     border: solid 1px var(--border-color);
+}
+
+div.app-name-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 10px;
 }
 
 div.main-content {
@@ -30,6 +47,16 @@ div.main-content {
   gap: 16px;
   background-color: var(--main-background-color);
   padding: 0px 150px 60px 150px;
+}
+
+h2.menu-title {
+    font-size: 10px;
+    color: var(--text-secondaire);
+    margin: 0%;
+}
+
+ul {
+    margin: 0%;
 }
 
 div.title-btn {
