@@ -1,0 +1,134 @@
+:root {
+	/*Background color*/
+	--primary-bg-color: #f2f2f7;
+	--secondary-bg-color: #ffffff;
+	--terciary-bg-color: #f87700;
+	/*Text color*/
+	--primary-text-color: black;
+	--secondary-text-color: #9f9f9f;
+	--terciary-text-color: #f87700;
+	/*Border color*/
+	--border-color: #cfcdc5;
+	/*Font styling*/
+	--font-family-base: "Elms Sans", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: var(--font-family-base);
+}
+
+/*Text styling*/
+h1,
+h2,
+p,
+a[class*="black"] {
+	color: var(--primary-text-color);
+}
+
+h1 {
+	font-size: 16px;
+}
+
+h2,
+p[class*="gray"] {
+	color: var(--secondary-text-color);
+}
+
+p,
+a[class*="orange"] {
+	color: var(--terciary-text-color);
+}
+
+p[class*="titre-card"] {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+p[class*="orange"] {
+	color: var(--terciary-text-color);
+}
+
+h2.menu-gray {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*Layout*/
+body {
+	display: flex;
+	flex-direction: row;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	padding: 0%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Aside*/
+aside {
+	display: flex;
+	flex-direction: column;
+	gap: 58px;
+	height: 103.75rem;
+	width: 18rem;
+	background-color: var(--secondary-bg-color);
+	box-shadow: 5px 5px 10px var(--border-color);
+	border: 1px solid var(--border-color);
+	padding-left: 2rem;
+	padding-top: 2rem;
+}
+
+div.app-name {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+}
+
+div.app-name > img {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+section.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+nav ul li {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.5rem 1rem;
+}
+
+nav ul li img {
+	width: 24px;
+	height: 24px;
+	display: block;
+}
+
+nav ul li a {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+/*MAIN*/
+/**/
