@@ -173,11 +173,15 @@ header {
 	justify-content: center;
 }
 
+search {
+	flex-grow: 1;
+}
+
 input[type="search"] {
+	width: 100%;
 	padding: 0.5rem 1rem;
 	border: 1px solid var(--searchBar-border-color);
 	border-radius: 999px;
-	width: 1091px;
 }
 
 div.user {
