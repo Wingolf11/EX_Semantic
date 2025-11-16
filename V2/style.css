@@ -23,6 +23,7 @@
 /* Reset body and html */
 
 /*Text styling*/
+h3[class*="black"],
 h1[class*="black"],
 h2[class*="black"],
 p[class*="black"],
@@ -34,6 +35,11 @@ h1 {
 	font-size: 16px;
 }
 
+h3 {
+	font-size: 18px;
+	font-weight: 500;
+	padding-left: 12px;
+}
 h2[class*="gray"],
 p[class*="gray"] {
 	color: var(--secondary-text-color);
@@ -67,6 +73,21 @@ button[class*="orange"] {
 	color: var(--secondary-bg-color);
 	background-color: var(--terciary-bg-color);
 	cursor: pointer;
+
+	transition: background-color 0.3s ease, transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+button[class*="orange"]:hover {
+	background-color: var(--secondary-bg-color);
+	color: var(--terciary-bg-color);
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button[class*="orange"]:active {
+	transform: scale(0.97);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 h2.menu-gray {
@@ -156,6 +177,7 @@ main {
 	gap: 60px;
 	padding: 2.625rem 10.313rem;
 	width: 100%;
+	background-color: var(--primary-bg-color);
 }
 
 div.content-container {
@@ -200,10 +222,12 @@ div.user > img {
 div.content-container {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	justify-content: space-between;
+	height: 100%;
 }
 
 section.suggestion {
+	height: 45%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -215,4 +239,74 @@ section.suggestion {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+/*GRID*/
+.grid {
+	display: grid;
+	height: 100%;
+	grid-template-areas:
+		"a b e"
+		"c d e";
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 2fr;
+	aspect-ratio: 1 / 1;
+	gap: 8px;
+}
+
+#a {
+	grid-area: a;
+}
+#b {
+	grid-area: b;
+}
+#c {
+	grid-area: c;
+}
+#d {
+	grid-area: d;
+}
+#e {
+	grid-area: e;
+}
+
+article.card {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+	gap: 8px;
+	justify-content: space-between;
+	border-radius: 8px;
+}
+
+.empty-img {
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+	height: 100%;
+	justify-content: space-between;
+	background-image: url("../assets/image.png");
+	background-size: 100% 100%;
+}
+
+.empty-img > *:not(p) {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+span[data-icon="favorite"] {
+	cursor: pointer;
+}
+
+.card-genre {
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--secondary-text-color);
+	padding: 4px 25px 4px 10px;
+	width: fit-content;
+	text-align: justify;
+	background-color: var(--primary-bg-color);
+	border-radius: 16px;
 }
