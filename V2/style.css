@@ -417,10 +417,13 @@ article > img {
 	width: 200px;
 }
 
+span.material-symbols-outlined {
+	cursor: pointer;
+}
+
 span.material-symbols-outlined[data-icon*="play"] {
 	align-items: end;
 	color: var(--terciary-text-color);
-	cursor: pointer;
 }
 
 /*AUTRE*/
@@ -472,4 +475,39 @@ div.main-footer-content {
 .footer-img {
 	height: 100px;
 	width: 165px;
+}
+
+hgroup {
+	flex-grow: 1;
+	align-items: center;
+}
+
+div.player-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+div.more-options {
+	flex-grow: 1;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	gap: 10px;
+	width: auto;
+}
+
+div.more-options > progress {
+	width: 45%;
+}
+
+.material-symbols-outlined[data-icon="player"] {
+	font-size: 50px;
+}
+
+.material-symbols-outlined[data-icon="skip"] {
+	font-size: 40px;
+	color: black;
 }
