@@ -231,7 +231,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	height: fit-content;
-	width: calc(100vw - 530px);
+	width: calc(100vw - 250px);
 }
 
 .box {
