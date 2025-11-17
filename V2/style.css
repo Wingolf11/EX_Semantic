@@ -183,6 +183,7 @@ main {
 div.content-container {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	height: 100%;
 	gap: 68px;
@@ -321,7 +322,14 @@ article.them-play {
 	flex-grow: 1;
 }
 
+div.autre-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 div.autre-content {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
