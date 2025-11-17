@@ -97,7 +97,8 @@ article[class*="card"] {
 
 footer:hover,
 article[class*="card"]:hover {
-	box-shadow: 0 2px 10px rgba(255, 160, 50, 0.4);
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(248, 119, 0, 0.6); 
 }
 
 /**/
@@ -483,10 +484,10 @@ hgroup {
 }
 
 div.player-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
 
 div.more-options {
