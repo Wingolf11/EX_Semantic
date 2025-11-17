@@ -456,7 +456,6 @@ div.footer-content {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	height: 100%;
 	width: 100%;
 	padding: 6px;
 }
