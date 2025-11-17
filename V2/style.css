@@ -12,6 +12,8 @@
 	--border-color: #cfcdc5;
 	/*Font styling*/
 	--font-family-base: "Elms Sans", sans-serif;
+	--font-family-secondary: "Roboto Mono", monospace;
+	--font-family-terciary: "Nunito Sans", sans-serif;
 }
 
 * {
@@ -98,7 +100,7 @@ article[class*="card"] {
 footer:hover,
 article[class*="card"]:hover {
 	transform: translateY(-4px);
-	box-shadow: 0 8px 20px rgba(248, 119, 0, 0.6); 
+	box-shadow: 0 8px 20px rgba(248, 119, 0, 0.6);
 }
 
 /**/
@@ -511,4 +513,103 @@ div.more-options > progress {
 .material-symbols-outlined[data-icon="skip"] {
 	font-size: 40px;
 	color: black;
+}
+
+/*MODAL*/
+
+/* Overlay */
+.modal {
+	display: none; /* hidden by default */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+/* Show modal */
+.modal.active {
+	display: flex;
+}
+
+div.record-t {
+	display: flex;
+	width: 100%;
+}
+
+div.record-t {
+	align-items: start;
+	font-size: 36px;
+	font-weight: 500;
+	color: var(--terciary-text-color);
+	font-family: var(--font-family-secondary);
+}
+
+/* Modal content */
+.modal-content {
+	align-items: center;
+	width: 944px;
+	height: 420px;
+	border-radius: 24px;
+	background-color: var(--secondary-bg-color);
+	border: 3px solid #cfcdc5; /* example border color */
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2rem;
+	position: relative;
+	opacity: 1; /* fully visible */
+	transform: rotate(0deg); /* angle 0 deg */
+	box-sizing: border-box;
+}
+
+/* Close button */
+
+.recording-icon {
+	height: 200px;
+	width: 200px;
+}
+
+.modal-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	border: none;
+	background: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+/* Example modal content: heading, text, button */
+.modal-content h2 {
+	font-size: 24px;
+	margin: 0;
+	text-align: center;
+}
+
+.modal-content p {
+	font-size: 16px;
+	text-align: center;
+}
+
+.modal-content button.start-recording {
+	align-self: center;
+	padding: 0.75rem 1.5rem;
+	border: none;
+	border-radius: 8px;
+	background-color: var(--primary-bg-color);
+	color: var(--terciary-text-color);
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.modal-content button.start-recording:hover {
+	transform: translateY(-3px);
+	box-shadow: 0px 0px 20px rgba(248, 119, 0, 0.6);
 }

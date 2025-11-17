@@ -327,13 +327,25 @@
 							<p class="progress-subtitle">Subtitle</p>
 						</hgroup>
 						<div class="player-icons">
-							<span class="material-symbols-outlined" data-icon="skip" tabindex="0">
+							<span
+								class="material-symbols-outlined"
+								data-icon="skip"
+								tabindex="0"
+							>
 								skip_previous
 							</span>
-							<span class="material-symbols-outlined" data-icon="player" tabindex="0">
+							<span
+								class="material-symbols-outlined"
+								data-icon="player"
+								tabindex="0"
+							>
 								play_circle
 							</span>
-							<span class="material-symbols-outlined" data-icon="skip" tabindex="0">
+							<span
+								class="material-symbols-outlined"
+								data-icon="skip"
+								tabindex="0"
+							>
 								skip_next
 							</span>
 						</div>
@@ -356,5 +368,23 @@
 				</div>
 			</footer>
 		</main>
+		<!-- Modal -->
+		<div
+			id="recordModal"
+			class="modal"
+			aria-hidden="true"
+			role="dialog"
+			aria-labelledby="modalTitle"
+			aria-describedby="modalDesc"
+		>
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Close modal">&times;</button>
+				<img class="recording-icon" src="../assets/modal.png" alt="" aria-hidden="true" />
+				<button class="start-recording">ENREGISTRER</button>
+				<div class="record-t" aria-label="timer">00:00</div>
+				<progress class="player-progress" max="100" value="70">70%</progress>
+			</div>
+		</div>
+		<script src="./script.js"></script>
 	</body>
 </html>
