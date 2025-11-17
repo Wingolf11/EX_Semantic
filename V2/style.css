@@ -300,7 +300,7 @@ section.suggestion {
 /*GRID*/
 .grid {
 	display: grid;
-	height: 1000px;
+	height: 800px;
 	width: 100%;
 	grid-template-areas:
 		"a b e"
